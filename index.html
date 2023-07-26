@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module-3</title>
+
+    
+    <!--tailwind & daisy ui link-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--google font manrope link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-family {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+
+    <script src="https://kit.fontawesome.com/6c97c1d8e6.js" crossorigin="anonymous"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-family">
+    <header class=" lg:container lg:mx-auto ">
+     <nav>
+
+      <div class="navbar  lg:bg-red-100 lg:rounded-full">
+       
+        <div class="navbar-start hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Item 1</a></li>
+            <li><a>Item 1</a></li>
+            <li><a>Item 3</a></li>
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
+
+
+        <div class="navbar-center">
+
+          <div> 
+            <a class="btn btn-ghost normal-case text-xl "><img src="images/logo.png" alt="">Fruit Burst</a>
+           </div>
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Item 1</a></li>
+              <li><a>Item 1</a></li>
+              <li><a>Item 3</a></li>
+              <li><a>Item 3</a></li>
+              <li class=" ">
+                <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs  relative h-10  " />
+                <i class="fa-solid fa-magnifying-glass absolute w-10 ml-36 mt-2 h-5 "></i>
+               
+              </li>
+            </ul>
+          
+          </div>
+        
+       
+        </div>
+
+        <div class="navbar-end">
+          <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs relative  h-10  hidden lg:flex " />
+          <i class="fa-solid fa-magnifying-glass absolute  h-5 w-10 hidden lg:flex  "></i>
+        </div>
+     
+  
+      </div>
+     </nav>
+
+
+          
+
+  
+    </header>
+
+
+    
+</body>
+</html>
