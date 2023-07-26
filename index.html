@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Module-3</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module-3</title>
 
-    
-    <!--tailwind & daisy ui link-->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
 
-    <!--google font manrope link-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <style>
-        .font-family {
-            font-family: 'Manrope', sans-serif;
+  <!--tailwind & daisy ui link-->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!--google font manrope link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .font-family {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
+
+  <script src="https://kit.fontawesome.com/6c97c1d8e6.js" crossorigin="anonymous"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
         }
-    </style>
-
-    <script src="https://kit.fontawesome.com/6c97c1d8e6.js" crossorigin="anonymous"></script>
-
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
-        }
-    </script>
+      }
+    }
+  </script>
 </head>
+
 <body class="font-family">
-    <header class=" lg:container lg:mx-auto ">
-     <nav>
+  <header class=" lg:container lg:mx-auto ">
+    <nav>
 
       <div class="navbar  lg:bg-red-100 lg:rounded-full">
-       
+
         <div class="navbar-start hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
             <li><a>Item 1</a></li>
@@ -53,12 +54,15 @@
 
         <div class="navbar-center">
 
-          <div> 
+          <div>
             <a class="btn btn-ghost normal-case text-xl "><img src="images/logo.png" alt="">Fruit Burst</a>
-           </div>
+          </div>
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
             </label>
             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
               <li><a>Item 1</a></li>
@@ -66,33 +70,92 @@
               <li><a>Item 3</a></li>
               <li><a>Item 3</a></li>
               <li class=" ">
-                <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs  relative h-10  " />
+                <input type="text" placeholder="Type here"
+                  class="input input-bordered w-full max-w-xs  relative h-10  " />
                 <i class="fa-solid fa-magnifying-glass absolute w-10 ml-36 mt-2 h-5 "></i>
-               
+
               </li>
             </ul>
-          
+
           </div>
-        
-       
+
+
         </div>
 
         <div class="navbar-end">
-          <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs relative  h-10  hidden lg:flex " />
+          <input type="text" placeholder="Type here"
+            class="input input-bordered w-full max-w-xs relative  h-10 rounded-2xl hidden lg:flex " />
           <i class="fa-solid fa-magnifying-glass absolute  h-5 w-10 hidden lg:flex  "></i>
         </div>
-     
-  
+
+
       </div>
-     </nav>
+    </nav>
 
-
+    <div class="carousel w-full lg:mt-12  lg:rounded-lg">
+      <div id="slide1" class="carousel-item relative w-full ">
+        <img src="/images/banner1.png" class="w-full" />
+        <div class="absolute  w-full h-full  bg-black opacity-60  flex flex-col items-center justify-center lg:gap-12">
+          <h1 class="text-white text-center text-xl lg:font-extrabold lg:text-5xl ">Exotic taste at your <br>doorstep</h1>
           
+          <button class="text-white text-center btn bg-red-600 ">shop now</button>
+        </div>
 
-  
-    </header>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
 
 
-    
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="/images/banner2.png" class="w-full" />
+
+        <div class="absolute top-0 left-0 w-full h-full bg-black opacity-60 flex flex-col items-center justify-center">
+          <h1 class="text-white text-center text-xl lg:font-extrabold lg:text-5xl ">Exotic taste at your <br>doorstep</h1>
+          
+          <button class="text-white  btn bg-red-600  lg:p-5 lg:mt-8">shop now</button>
+        </div>
+
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full ">
+        <img src="/images/banner3.png" class="w-full" />
+        <div class="absolute top-0 left-0 w-full h-full  bg-black opacity-60  flex flex-col items-center justify-center">
+          <h1 class="text-white text-center text-xl lg:font-extrabold lg:text-5xl ">Exotic taste at your <br>doorstep</h1>
+          
+          <button class="text-white  btn bg-red-600  lg:p-5 lg:mt-8">shop now</button>
+        </div>
+
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide4" class="carousel-item relative w-full ">
+        <img src="/images/banner4.png" class="w-full" />
+        <div class="absolute top-0 left-0 w-full h-full  bg-black opacity-60  flex flex-col items-center justify-center">
+          <h1 class="text-white text-center text-xl lg:font-extrabold lg:text-5xl ">Exotic taste at your <br>doorstep</h1>
+          
+          <button class="text-white  btn bg-red-600  lg:p-5 lg:mt-8">shop now</button>
+        </div>
+
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+
+
+
+  </header>
+
+
+
 </body>
+
 </html>
